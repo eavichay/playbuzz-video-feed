@@ -1,14 +1,14 @@
-<header>
+<div class="jumbotron">
   <h1>Welcome to playbuzz videofeed</h1>
-</header>
-<div class="Container home">
+  <p>Please choose video source</p>
   <div class="video-filter">
     <select ng-model="ctrl.filter" ng-change="ctrl.handleFilterChange()">
       <option ng-repeat="option in ctrl.filterOptions"
               value="{{option.value}}">{{option.label}}</option>
     </select>
   </div>
-  <div class="video-list">
-    <video-item ng-repeat="video in ctrl.videos" data="video"></video-item>
-  </div>
+</div>
+
+<div class="container">
+  <video-item ng-repeat="video in ctrl.videos" data="video"></video-item>
 </div>

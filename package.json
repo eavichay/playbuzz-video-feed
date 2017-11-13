@@ -1,0 +1,23 @@
+{
+  "name": "videofeed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "install:client": "cd ./client && npm i",
+    "install:server": "cd ./server && npm i",
+    "build": "cd ./client && npm run build",
+    "postinstall": "npm run install:client && npm run install:server",
+    "start": "cd ./server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eavichay/playbuzz-video-feed.git"
+  },
+  "author": "Avichay Eyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eavichay/playbuzz-video-feed/issues"
+  },
+  "homepage": "https://github.com/eavichay/playbuzz-video-feed#readme"
+}

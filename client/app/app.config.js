@@ -1,9 +1,21 @@
 export default {
-  endpoint: 'https://cdn.playbuzz.com/content/feed/items',
+  endpoint: 'http://localhost:3000/videos',
   videoFilters: [
-    { label: 'All', value: '' },
-    { label: 'Youtube', value: 'yt' },
-    { label: 'Facebook', value: 'fb' },
-    { label: 'Playbuzz', value: 'pb' }
+    {
+      label: 'All',
+      value: ''
+    },
+    {
+      label: 'Youtube',
+      value: 'youtube'
+    },
+    {
+      label: 'Facebook',
+      value: 'facebook'
+    },
+    {
+      label: 'Playbuzz',
+      value: 'url'
+    }
   ]
 }

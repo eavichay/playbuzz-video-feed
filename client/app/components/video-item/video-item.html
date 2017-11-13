@@ -1,4 +1,9 @@
-<div class="video-card">
-  <h1>{{ctrl.data.title}}</h1>
-  <div class="video-player" ng-bind-html="ctrl.playerHTML"></div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <span>{{ctrl.data.title}}</span>
+      <span class="pull-right">{{ctrl.data.views | prettyNum}} views</span>
+  </div>
+  <div class="panel-body">
+      <div class="video-player" ng-bind-html="ctrl.playerHTML"></div>
+  </div>
 </div>
