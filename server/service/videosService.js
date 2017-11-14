@@ -10,12 +10,11 @@ class VideosService {
     }
 
     async getData() {
-        if (this.cache) {
-            return this.cache
+        if (!this.cache) {
+            const content = await readFile(this.staticDataPath)
+            this.cache = content
         }
-        const content = await readFile(this.staticDataPath)
-        this.cache = JSON.parse(content)
-        return this.cache
+        return JSON.parse(this.cache)
     }
 }
 
